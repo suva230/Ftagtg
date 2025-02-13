@@ -3,12 +3,12 @@ import sys
 from telethon import TelegramClient, events
 
 # Use environment variables for security
-api_id = int(os.getenv("API_ID", "27601650"))  
-api_hash = os.getenv("API_HASH", "57ba09bc57e6df472fcf9fbafc01fbe7")
-bot_token = os.getenv("BOT_TOKEN", "7308141752:AAG4BKBoh35JR96VFma2uy1laqeDuD0viUY")
+api_id = int(os.getenv("API_ID"))  
+api_hash = os.getenv("API_HASH")
+bot_token = os.getenv("BOT_TOKEN")
 
 # Pre-set authorization key
-authorization_key = os.getenv("AUTH_KEY", "A85B5676FDA7B66CDEE1446E61872")  # Change & share with users
+authorization_key = os.getenv("AUTH_KEY")  # Change & share with users
 
 # Admins who can restart the bot
 admin_users = {'Avengers005', 'Suva023'}  # Only these users can restart
